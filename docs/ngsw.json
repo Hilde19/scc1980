@@ -1,0 +1,113 @@
+{
+  "configVersion": 1,
+  "timestamp": 1667575318899,
+  "index": "/scc1980/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/scc1980/favicon.ico",
+        "/scc1980/index.html",
+        "/scc1980/main.913dd9603b91ca91.js",
+        "/scc1980/manifest.webmanifest",
+        "/scc1980/polyfills.ccad4b2dadf083dd.js",
+        "/scc1980/runtime.a82f59e0ac3d1cb4.js",
+        "/scc1980/styles.61504aaf089d1f22.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/scc1980/assets/fonts/OFL.txt",
+        "/scc1980/assets/fonts/Oswald-Bold.ttf",
+        "/scc1980/assets/fonts/Oswald-Light.ttf",
+        "/scc1980/assets/fonts/Oswald-Regular.ttf",
+        "/scc1980/assets/fonts/SairaCondensed-Black.ttf",
+        "/scc1980/assets/fonts/SairaCondensed-Bold.ttf",
+        "/scc1980/assets/fonts/SairaCondensed-ExtraBold.ttf",
+        "/scc1980/assets/fonts/SairaCondensed-ExtraLight.ttf",
+        "/scc1980/assets/fonts/SairaCondensed-Light.ttf",
+        "/scc1980/assets/fonts/SairaCondensed-Light.woff",
+        "/scc1980/assets/fonts/SairaCondensed-Medium.ttf",
+        "/scc1980/assets/fonts/SairaCondensed-Regular.ttf",
+        "/scc1980/assets/fonts/SairaCondensed-SemiBold.ttf",
+        "/scc1980/assets/fonts/SairaCondensed-Thin.ttf",
+        "/scc1980/assets/fonts/styles.css",
+        "/scc1980/assets/icons/icon-128x128.png",
+        "/scc1980/assets/icons/icon-144x144.png",
+        "/scc1980/assets/icons/icon-152x152.png",
+        "/scc1980/assets/icons/icon-192x192.png",
+        "/scc1980/assets/icons/icon-384x384.png",
+        "/scc1980/assets/icons/icon-512x512.png",
+        "/scc1980/assets/icons/icon-72x72.png",
+        "/scc1980/assets/icons/icon-96x96.png",
+        "/scc1980/assets/sccwappen.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/scc1980/assets/fonts/OFL.txt": "7ee19ac47a034148209dfe5f2db67ac6883898ed",
+    "/scc1980/assets/fonts/Oswald-Bold.ttf": "57baf8d659788eaf54c3756ce887012ffbb8c8ad",
+    "/scc1980/assets/fonts/Oswald-Light.ttf": "33c86c1da2b5bcc3f05a387f0150b2a7749ed7e2",
+    "/scc1980/assets/fonts/Oswald-Regular.ttf": "781c01b10130e9a1bb572816b0fa54412b0ec1ac",
+    "/scc1980/assets/fonts/SairaCondensed-Black.ttf": "e5b3656a20a57bf427c2521a963aeea706cb5e2d",
+    "/scc1980/assets/fonts/SairaCondensed-Bold.ttf": "7079e5186abb283f65dcd3d7f79810bfb1e5c8d3",
+    "/scc1980/assets/fonts/SairaCondensed-ExtraBold.ttf": "75d6b121b5e17f8249db7fcacd5099bec74f1b04",
+    "/scc1980/assets/fonts/SairaCondensed-ExtraLight.ttf": "be290e56c2eaa5b32913c26d22a15a78590444c1",
+    "/scc1980/assets/fonts/SairaCondensed-Light.ttf": "1bd18b51767b016e6fb47aea6ac54e78bb58bb52",
+    "/scc1980/assets/fonts/SairaCondensed-Light.woff": "0534cfd6678dd09a47353ad5ebc0b747736fb0de",
+    "/scc1980/assets/fonts/SairaCondensed-Medium.ttf": "3a479cbb0c70c05923e7d496a98368e2e6c6fb7d",
+    "/scc1980/assets/fonts/SairaCondensed-Regular.ttf": "f0d71eb21ee380cc3ecb8e9847d2d750e398f054",
+    "/scc1980/assets/fonts/SairaCondensed-SemiBold.ttf": "ad45be5949c81609aa207b5c027ebd8fe67b3744",
+    "/scc1980/assets/fonts/SairaCondensed-Thin.ttf": "3c9da3f0d89d234762cdb35fb88f746d84d71999",
+    "/scc1980/assets/fonts/styles.css": "8a2438652174a442eef02495e283ef2e60ab728c",
+    "/scc1980/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/scc1980/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/scc1980/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/scc1980/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/scc1980/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/scc1980/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/scc1980/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/scc1980/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/scc1980/assets/sccwappen.png": "f61d1ec68468606bb2c97d062ee2936bdce854da",
+    "/scc1980/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/scc1980/index.html": "9c8ad25daa00a1583560262a9c6beb4f14ed33ef",
+    "/scc1980/main.913dd9603b91ca91.js": "dcf846946a6298b324c4ecda86e8038a25f1db58",
+    "/scc1980/manifest.webmanifest": "bd81eeb89bd8ee114068c68b6c04fb953460a1b5",
+    "/scc1980/polyfills.ccad4b2dadf083dd.js": "65033606befeaaadbb12cba653260a8b566e6b98",
+    "/scc1980/runtime.a82f59e0ac3d1cb4.js": "730bf1df907aad10a8cd2e4f7bf4b85f212bd553",
+    "/scc1980/styles.61504aaf089d1f22.css": "bd701e7ec7836ac3fde51acec9c3134122951765"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
