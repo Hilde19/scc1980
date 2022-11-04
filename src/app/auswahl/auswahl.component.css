@@ -1,0 +1,103 @@
+.ueberschrift {
+    color:  rgb(242, 240, 223);
+    /* text-align: center; */
+
+    /* font-family:Georgia, 'Times New Roman', Times, serif; */
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    /* vertical-align: center; */
+    align-items: center;
+    
+}
+
+.becherzurueck {
+    width: 100%;
+    font-size: 1.5rem;
+    margin-top: 0%;
+    background-color: rgb(237, 219, 54);
+    border-radius: 5px;
+    border-color: rgb(242, 241, 230);
+    border-width: 2px;
+    /* font-family: saira; */
+}
+
+.getraenkauswahl {
+    font-size: 1.5rem;
+    /* font-size: 1rem; */
+    width: 30%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    margin-top: 2%;
+    background-color: rgb(242, 240, 223);
+    border-radius: 5px;
+    border-color: rgb(242, 241, 230);
+    border-width: 2px;
+    /* font-family: saira; */
+}
+
+.unterkategorie {
+    font-size: 1.5rem;
+    width: 30%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    margin-top: 2%;
+    background-color: rgb(230, 220, 131);
+    border-radius: 5px;
+    border-color: rgb(242, 241, 230);
+    border-width: 2px;
+    /* font-family: saira; */
+}
+
+.nichtaktiv {
+    font-size: 1.5rem;
+    /* font-size: 1rem; */
+    width: 30%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    margin-top: 2%;
+    background-color: rgb(99, 99, 91);
+    border-radius: 5px;
+    border-color: rgb(242, 241, 230);
+    border-width: 2px;
+    /* font-family: saira; */
+}
+
+
+
+.unterauswahl {
+    font-size: 1.5rem;
+    width: 30%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    margin-top: 2%;
+    background-color: rgb(237, 219, 54);
+    border-radius: 5px;
+    border-color: rgb(242, 241, 230);
+    border-width: 2px;
+    font-family: saira;
+}
+
+.ohneeis {
+    font-size: 1.5rem;
+    width: 30%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    margin-top: 2%;
+    /* background-color: rgb(227, 227, 240); */
+    background-color: rgb(41, 0, 0);
+    color: rgb(222, 233, 222);
+    border-color: white;
+}
+
+.zurueck {
+    font-size: 1rem;
+    width: 30%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    margin-top: 2%;
+    /* background-color: rgb(227, 227, 240); */
+    background-color: rgb(41, 0, 0);
+    color: rgb(222, 233, 222);
+    border-color: white;
+}

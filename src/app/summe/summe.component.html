@@ -1,0 +1,16 @@
+<div class="aussen_summe">
+    <div class="loesch_summe">
+        <button class="button_loeschen" [routerLink]="['/start_annahme']" (click)="bs.loeschBest()">alles löschen</button>
+    </div>
+    <div class="ges_summe">
+        <b>Gesamt: <br>
+            {{bs.gesamtsumme}} €</b> 
+    </div>
+    <div class="zahlung_summe">
+        <div>
+            <button class="button_bar" [routerLink]="['barzahl']" (click)="bs.uebergeben('bar')">BAR</button>
+            <br>
+            <button class="button_ec" [routerLink]="['ec-geraet']" (click)="bs.uebergeben('ec')">EC</button>
+        </div>
+    </div>
+</div>

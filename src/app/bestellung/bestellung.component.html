@@ -1,0 +1,27 @@
+<div class="aussen" *ngFor="let getraenk of bs.getraenk; let i = index">
+    <button class="minus" (click) = bs.minusGetr(i) *ngIf="i>=0">-</button> 
+    <button class="plus" (click) = bs.plusGetr(i) *ngIf="i>=0">+</button> 
+    <div class="a"> {{ bs.anzahl [i] }}-</div>
+    <div class="g"> {{ bs.getraenk [i] }} </div>
+    <div class="p"> {{ bs.g_preis [i] }} </div>  
+</div>
+<hr>
+<div class="aussen" *ngIf="bs.anz_plus_pfand != 0">
+    <button class="minus" (click) = bs.pfanddazu_minus()>-</button>
+    <button class="plus" (click) = bs.pfanddazu()>+</button>
+    <div class="a"> {{ bs.anz_plus_pfand }}- </div>
+    <div class="g"> {{ bs.becher }} </div>
+    <div class="p"> {{ bs.plus_pfand }} </div> 
+</div>
+<div class="aussen" *ngIf="bs.anz_minus_pfand != 0">
+    <button class="minus" (click) = bs.pfandabzug_minus()>-</button>
+    <button class="plus" (click) = bs.pfandabzug()>+</button>
+    <div class="a"> {{ bs.anz_minus_pfand }}- </div>
+    <div class="g"> {{ bs.bechzur }} </div>  
+    <div class="p"> {{ bs.minus_pfand }} </div>   
+</div>
+<!-- <hr>
+<div class="aussen">
+    <div class="p_ges_text"> Gesamt:</div> 
+    <div class="p_ges_zahl"> {{bs.gesamtsumme}} </div>     
+</div> -->

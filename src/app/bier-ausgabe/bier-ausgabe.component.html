@@ -1,0 +1,11 @@
+<div class="bierausgabe">  
+    <div *ngFor="let expense of expenses">
+        <div *ngIf="bierfilter(expense.expense)">
+            {{ expense.anzahl}} - {{ expense.expense }} - {{ expense.bestellnr }}
+            <button (click)="deleteExpense(expense.id);
+                saveExpense(expense.expense, expense.amount, 
+                expense.anzahl, expense.bestellnr, expense.zahlart )"
+            >OK</button> 
+        </div>       
+    </div> 
+</div>

@@ -1,0 +1,99 @@
+.aussen {
+    /* display: flex; */
+    /* justify-content: left; */
+    position: relative;
+    height:100%;
+}
+
+.linke_spalte{
+    width:50%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+
+}
+/* gegebener Betrag */
+.gegeben {
+    background-color: rgb(242, 240, 223);
+    width:61.8%;
+    margin-top: 5%;
+    margin-left:8%;
+    margin-bottom:5px;
+    text-align:right;
+    font-size: 2rem;
+    border: 2px solid black;
+}
+/*zahlenbutton*/
+.eingabe {
+    height: 15%;
+    width: 20%;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    background-color: rgb(242, 240, 223);
+    margin: 2px;    
+}
+.eingabe:active {
+
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+} 
+.lirand {
+    margin-left: 8%;
+    margin-right: 1%;
+    height: 15%;
+    width: 20%;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    background-color: rgb(242, 240, 223);
+}
+.lirand:active {
+
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+} 
+.enter {
+    margin-left: 0%;
+    height: 15%;
+    width: 63%;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    background-color: rgb(242, 240, 223);
+}
+  
+.rechte_spalte{
+    width:50%;
+    height:100%;
+    /* background-color:aqua; */
+    /* border: 1px solid rgb(31, 185, 59); */
+    position: absolute;
+    right: 0%;
+    
+}
+
+.pfandabfrage {
+    color:rgb(242, 240, 223);
+    margin-top: 5%;
+    font-size: 1.5rem;
+}
+.pfandantwort {
+    
+    background-color: rgb(242, 240, 223);
+    height: 50%;
+    width: 30%;
+    font-size: 1.5rem;
+}
+.bestaetigung {
+    margin-top: 50%;
+}
+
+
+

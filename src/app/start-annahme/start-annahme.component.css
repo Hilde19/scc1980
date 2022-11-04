@@ -1,0 +1,96 @@
+/* linke Seite */
+.bestellung {
+    padding: 0.5%;
+    background-color:rgb(226,226,226);
+    width: 40%;
+    height: 76.5%;
+    border: 1px solid black;
+    border-radius: 10px; 
+    position: absolute;
+    bottom: 1%;
+    left: 0.5%;
+    top: 1%;
+    overflow-x:hidden;
+    overflow-y:auto; 
+    /* font-weight: bold; */
+
+}
+.bestellungbild {
+    padding: 0.5%;
+    width: 38%;
+    height: 76.5%;
+    /* border: 1px solid black; */
+    border-radius: 10px; 
+    position: absolute;
+    bottom: 1%;
+    left: 0.5%;
+    top: 1%;
+    background-image:url('/../assets/sccwappen.png');
+    background-size: 100%;
+    opacity: 0.15;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
+   
+}
+
+.summe {
+    padding: 0.5%;
+    background-color:rgb(187, 187, 187);
+    width: 40%;
+    height: 16%;
+    border: 1px solid black;
+    overflow: hidden;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 1%;
+    left: 0.5%;
+    /* font-size: 2rem; */
+}
+
+/* rechte Seite */
+.grosseueberschrift{
+    width: 57%;
+    color: rgb(241, 241, 241);
+    height: 15%;
+    font-size: 3rem;
+    margin-top: 1%;
+    position: absolute;
+    top: 0%;
+    right: 0.5%;
+    /* border: 1px solid yellow; */
+    background-color:rgb(118, 6, 6);
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+.auswahl {
+    width: 57%;
+    /* height: 36%; */
+    height: 37%;
+    overflow: hidden;
+    border-radius: 10px;
+    position: absolute;
+    /* top: 18%; */
+    top: 1%;
+    right: 0.5%;
+
+    font-family: 'SairaCondensed-Light';
+    
+}
+.unterauswahl {
+    background-color:rgb(118, 6, 6);
+    border-radius: 10px;
+    /* height: 44%; */
+    height: 60%;
+    width:57%;
+    position: absolute;
+    bottom: 1%;
+    right: 0.5%;
+}
+
+
