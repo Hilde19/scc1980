@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1667576363544,
+  "timestamp": 1667582431344,
   "index": "/scc1980/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/scc1980/favicon.ico",
         "/scc1980/index.html",
-        "/scc1980/main.6f43d83e5cc2c641.js",
+        "/scc1980/main.10821a85e6a44a8b.js",
         "/scc1980/manifest.webmanifest",
         "/scc1980/polyfills.ccad4b2dadf083dd.js",
         "/scc1980/runtime.a82f59e0ac3d1cb4.js",
@@ -52,7 +52,8 @@
         "/scc1980/assets/icons/icon-512x512.png",
         "/scc1980/assets/icons/icon-72x72.png",
         "/scc1980/assets/icons/icon-96x96.png",
-        "/scc1980/assets/sccwappen.png"
+        "/scc1980/assets/sccwappen.png",
+        "/scc1980/assets/sccwappentrans.png"
       ],
       "patterns": []
     }
@@ -83,9 +84,10 @@
     "/scc1980/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/scc1980/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/scc1980/assets/sccwappen.png": "f61d1ec68468606bb2c97d062ee2936bdce854da",
+    "/scc1980/assets/sccwappentrans.png": "2009a043c429c77ceb062ebbdd140c988559e922",
     "/scc1980/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/scc1980/index.html": "aadb85170890df60bdfc7ea96369085e9b90a351",
-    "/scc1980/main.6f43d83e5cc2c641.js": "92a634153e0e853fb969fced121e656c5f723171",
+    "/scc1980/index.html": "3319c9983be79df6596c1c6bf8e8b212d19bb2dc",
+    "/scc1980/main.10821a85e6a44a8b.js": "ce2915d4fbf7498682081e255fabb90e35eca32f",
     "/scc1980/manifest.webmanifest": "bd81eeb89bd8ee114068c68b6c04fb953460a1b5",
     "/scc1980/polyfills.ccad4b2dadf083dd.js": "65033606befeaaadbb12cba653260a8b566e6b98",
     "/scc1980/runtime.a82f59e0ac3d1cb4.js": "730bf1df907aad10a8cd2e4f7bf4b85f212bd553",
