@@ -2,11 +2,10 @@
 .bestellung {
     padding: 0.5%;
     background-color:rgb(226,226,226);
-    /* background-image:url('/../assets/sccwappentrans.png'); */
-    background-image:url('/scc/src/assets/sccwappentrans.png');
+    /* background-image:url('/../assets/sccwappentrans.png');
     background-size: 90%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;  */
     width: 40%;
     height: 76.5%;
     border: 1px solid black;

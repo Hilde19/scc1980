@@ -21,7 +21,7 @@
 .ges_summe{
     height: 100%;
     font-size: 2rem;
-    width: 60%;
+    width: 39%;
     text-align: center;
     display: flex;
     align-items: center;
@@ -34,9 +34,18 @@
     /* border: solid 1px black; */
 }
 
+.zahlung_bar {
+    width: 20%;
+    height: 100%;
+}
+.zahlung_ec {
+    width: 19%;
+    height: 100%;
+}
+
 .button_bar {
     width: 20%;
-    height: 50%;
+    height: 100%;
     background-color: greenyellow;
     position: absolute;
     top: 0%;
@@ -44,9 +53,10 @@
 }
 .button_ec {
     width: 20%;
-    height: 50%;
+    height: 100%;
     background-color: orange;
     position: absolute;
     bottom: 0%;
     font-size: 1.5rem;
+    right: 0%;
 }
