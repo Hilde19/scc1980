@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1667689362032,
+  "timestamp": 1667689558459,
   "index": "/scc1980/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/scc1980/favicon.ico",
         "/scc1980/index.html",
-        "/scc1980/main.a79f1945916e8539.js",
+        "/scc1980/main.81254f86c8b4be26.js",
         "/scc1980/manifest.webmanifest",
         "/scc1980/polyfills.ccad4b2dadf083dd.js",
         "/scc1980/runtime.a82f59e0ac3d1cb4.js",
@@ -86,8 +86,8 @@
     "/scc1980/assets/sccwappen.png": "f61d1ec68468606bb2c97d062ee2936bdce854da",
     "/scc1980/assets/sccwappentrans.png": "2009a043c429c77ceb062ebbdd140c988559e922",
     "/scc1980/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/scc1980/index.html": "540adda39c44ad3a9e9000f7760c5c1e787ad15e",
-    "/scc1980/main.a79f1945916e8539.js": "6e5c9bf661b7bbf47c054cd2d19590dd87529437",
+    "/scc1980/index.html": "181dceba0e59506aafaf98d8c96f09f58d0ef735",
+    "/scc1980/main.81254f86c8b4be26.js": "09d91a6905fbfb0f40d773dddfad8a399f2b3246",
     "/scc1980/manifest.webmanifest": "bd81eeb89bd8ee114068c68b6c04fb953460a1b5",
     "/scc1980/polyfills.ccad4b2dadf083dd.js": "65033606befeaaadbb12cba653260a8b566e6b98",
     "/scc1980/runtime.a82f59e0ac3d1cb4.js": "730bf1df907aad10a8cd2e4f7bf4b85f212bd553",
