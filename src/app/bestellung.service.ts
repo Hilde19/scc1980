@@ -31,6 +31,7 @@ export class BestellungService {
  
   zahl = '';
   zahlnum = 0;
+  zahlausgabe = '0.00';
   
   expenses: Expense[] = [];
   expense: Expense = new Expense();
@@ -148,7 +149,7 @@ export class BestellungService {
     this.anz_plus_pfand = 0;
     this.min_pf = 0;
     this.pl_pf = 0;
-    this.zahl = '';
+    this.betraegezuruecksetzen();
     this.preis_sonst = '0';
     this.pfand_antwort = '';
     this.pfandchipschrift = '';
@@ -236,7 +237,7 @@ export class BestellungService {
     this.anz_minus_pfand = this.anz_minus_pfand + 1;
 
     // fuer barzahl: betragfeld zurücksetzen
-    this.zahl = '';
+    this.betraegezuruecksetzen();
   }
   
   pfanddazu(){
@@ -248,7 +249,7 @@ export class BestellungService {
     this.summe = parseFloat((this.summe*1 + 2*1).toPrecision(6));
     this.gesamtsumme = this.summe.toFixed(2);
     // fuer barzahl: betragfeld zurücksetzen
-    this.zahl = '';
+    this.betraegezuruecksetzen();
   }
 
   pfandabzug_minus(){
@@ -260,7 +261,7 @@ export class BestellungService {
 
     this.anz_minus_pfand = this.anz_minus_pfand - 1;
     // fuer barzahl: betragfeld zurücksetzen
-    this.zahl = '';
+    this.betraegezuruecksetzen();
   }
 
   pfanddazu_minus(){
@@ -272,22 +273,45 @@ export class BestellungService {
     this.summe = parseFloat((this.summe*1 - 2*1).toPrecision(6));
     this.gesamtsumme = this.summe.toFixed(2);
     // fuer barzahl: betragfeld zurücksetzen
-    this.zahl = '';   
+    this.betraegezuruecksetzen();
   }
 
   
   loeZahl(){
     
-    this.zahl = this.zahl.slice (0 , this.zahl.length - 1);
+    this.betraegezuruecksetzen();
    
   }
-  addZahl(za:string){
-    if(this.zahl == '0' && za == '0'){
-      this.zahl = this.zahl;
-    }else if (za == '.' && this.zahl.includes('.')){
-      this.zahl = this.zahl;
-    }else   {
-     this.zahl = this.zahl + za; 
+
+  addZahl(za:string, comp:string){
+    // if(this.zahl == '0' && za == '0'){
+    //   this.zahl = this.zahl;
+    // }else if (za == '.' && this.zahl.includes('.')){
+    //   this.zahl = this.zahl;
+    // } else if (comp == 'sonstiges' && this.zahl.length == 1 && za != '.'){
+    //     this.zahl = this.zahl;
+    // }else {
+    //  this.zahl = this.zahl + za; 
+    // }
+    if (this.zahl.length == 3 && comp == 'sonstiges'){
+      this.zahl = this.zahl
+    } else if(this.zahl.length == 2 && comp == 'sonstiges' && za == '00'){
+      this.zahl = this.zahl
+    } else if(this.zahl.length == 5){
+      this.zahl = this.zahl
+    } else if(this.zahl.length == 4 && za == '00'){
+      this.zahl = this.zahl
+    } else {
+      this.zahl = this.zahl + za
+    }
+
+    this.zahlnum = parseFloat(this.zahl);
+    this.zahlnum = parseFloat((this.zahlnum/100).toPrecision(6));
+    if(this.zahlnum != 0){
+    this.zahlausgabe = this.zahlnum.toFixed(2);
+    } else {
+      this.zahlausgabe = '0.00';
+      this.zahl = '';
     }
   } 
   // Funktionen für SonstigesComponent
@@ -306,7 +330,7 @@ export class BestellungService {
   }
 
   getraenkio() {
-    this.preis_sonst = this.zahl 
+    this.preis_sonst = this.zahlausgabe; 
     this.anzahl_sonst = '1';
     
     if(this.preis_sonst != ''){
@@ -314,17 +338,17 @@ export class BestellungService {
       this.preis_sonst = this.preis_sonst_num.toFixed(2);
     }
     
-    if(this.preis_sonst != '' && this.pfand_kz != '0'){
+    if(this.preis_sonst != '0.00' && this.pfand_kz != '0'){
       this.addGetraenk(this.getraenk_sonst,this.preis_sonst,this.pfand_sonst)
       this.pfand_kz= '0';
       this.preis_sonst = '';
-      this.zahl = '';
+      this.betraegezuruecksetzen();
       this.fehler = '';
       this.fehler2 = '';
       this.pfand_antwort = '';
     } else {
     
-    if (this.preis_sonst == '') {
+    if (this.preis_sonst == '0.00') {
       this.fehler = 'Fehler: Preis eingeben'
    
     }
@@ -339,7 +363,7 @@ export class BestellungService {
 
   uebergeben(zahlart: string){
     this.pfandchipsberechnung();
-    
+    this.betraegezuruecksetzen();
     this.x = this.getraenk.length
     const currentDate = new Date()
     const timestamp = currentDate. getTime()
@@ -410,6 +434,12 @@ export class BestellungService {
       this.pfandchip = '';
     }
 
+  }
+
+  betraegezuruecksetzen(){
+    this.zahl = '';
+    this.zahlnum = 0;
+    this.zahlausgabe = '0.00';
   }
   
 

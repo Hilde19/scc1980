@@ -40,7 +40,7 @@ export class BarzahlComponent implements OnInit {
   // }
 
   rueckgeld(){
-    this.zahlnum = parseFloat(this.bs.zahl)
+    this.zahlnum = parseFloat(this.bs.zahlausgabe)
     this.summe = parseFloat(this.bs.gesamtsumme)
     this.rueck = parseFloat((this.zahlnum*1 - this.summe*1).toPrecision(6)) 
     if (this.rueck < 0){
