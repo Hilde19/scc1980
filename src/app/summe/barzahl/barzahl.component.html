@@ -14,9 +14,8 @@
         <button class="eingabe" (click)="bs.addZahl('9','barzahl')">9</button> <br>
         <button class="eingabe" class="lirand" (click)="bs.loeZahl()">C</button>
         <button class="eingabe" (click)="bs.addZahl('0','barzahl')">0</button>
-
         <button class="eingabe" (click)="bs.addZahl('00','barzahl')"> 00 </button> <br>
-        <button class="eingabe" class="enter" (click)="rueckgeld()">ENTER</button>
+        
         <p></p>
     </div>
     <div class="rechte_spalte">
@@ -33,7 +32,10 @@
             <br>
             {{bs.pfandchip}}  {{bs.pfandchipschrift}} {{bs.pfandchiprichtung}}
         </div>
-        <button class="haken" (click)="bs.loeschBest()" [routerLink]="['/start_annahme']">Bestellung abschließen</button>
+        <!-- <button class="haken" (click)="bs.loeschBest()" [routerLink]="['/start_annahme']">Bestellung abschließen</button> -->
+        <button class="haken" 
+            	(click)="rueckgeld(); bs.pfandchipsberechnung()" 
+                >ENTER</button>
 </div>
 </div>
 <!-- <div class="zurueck"> -->

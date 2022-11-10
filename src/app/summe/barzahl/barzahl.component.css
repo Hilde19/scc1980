@@ -111,6 +111,8 @@
 
 .haken{
     position:absolute;
+    height: 20%;
+    width: 80%;
     bottom: 10%;
     font-size: 2rem;
     background-color: #3e8e41;

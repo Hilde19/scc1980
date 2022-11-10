@@ -199,10 +199,10 @@ export class BestellungService {
       if (this.pfand[i] == '1') {
         this.pfanddazu_minus();
       }
-    
+      
       
     }
-  
+    this.pfandchipsberechnung();
   }
 
   plusGetr(i:number){
@@ -224,7 +224,7 @@ export class BestellungService {
     if (this.pfand[i] == '1') {
       this.pfanddazu();
     }
-   
+    this.pfandchipsberechnung();
   } 
   
   pfandabzug(){
@@ -238,6 +238,7 @@ export class BestellungService {
 
     // fuer barzahl: betragfeld zurücksetzen
     this.betraegezuruecksetzen();
+    this.pfandchipsberechnung();
   }
   
   pfanddazu(){
@@ -250,6 +251,7 @@ export class BestellungService {
     this.gesamtsumme = this.summe.toFixed(2);
     // fuer barzahl: betragfeld zurücksetzen
     this.betraegezuruecksetzen();
+    this.pfandchipsberechnung();
   }
 
   pfandabzug_minus(){
@@ -262,6 +264,7 @@ export class BestellungService {
     this.anz_minus_pfand = this.anz_minus_pfand - 1;
     // fuer barzahl: betragfeld zurücksetzen
     this.betraegezuruecksetzen();
+    this.pfandchipsberechnung();
   }
 
   pfanddazu_minus(){
@@ -274,6 +277,7 @@ export class BestellungService {
     this.gesamtsumme = this.summe.toFixed(2);
     // fuer barzahl: betragfeld zurücksetzen
     this.betraegezuruecksetzen();
+    this.pfandchipsberechnung();
   }
 
   
