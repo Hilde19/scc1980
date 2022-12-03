@@ -1,12 +1,25 @@
 <b class="ueberschrift">Essen & Kaffee</b>
 
-<button class="unterkategorie" [routerLink]="['kaffee']">Kaffee</button>
+
 <app-getraenk   [getraenk] = "'Brezel'" 
                 [preis] = "'2.00'" 
                 [pfand] = "false">
 </app-getraenk>
+<app-getraenk   [getraenk] = "'Bockwurst'" 
+                [preis] = "'2.50'" 
+                [pfand] = "false">
+</app-getraenk>
+<app-getraenk   [getraenk] = "'Bockwurst mit Kartoffelsalat'" 
+                [preis] = "'4.00'" 
+                [pfand] = "false">
+</app-getraenk>
+<button class="unterkategorie" [routerLink]="['kaffee']">Kaffee</button>
+<app-getraenk   [getraenk] = "'Kartoffelsalat'" 
+                [preis] = "'2.00'" 
+                [pfand] = "false">
+</app-getraenk>
 
-<button class="unterkategorie" [routerLink]="['bockwurst']">Bockwurst</button>
+<!-- <button class="unterkategorie" [routerLink]="['bockwurst']">Bockwurst</button> -->
 
 
 <!-- <app-getraenk   [getraenk] = "'Soljanka'" 
