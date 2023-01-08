@@ -3,24 +3,29 @@
 
 <app-getraenk   [getraenk] = "'Brezel'" 
                 [preis] = "'2.00'" 
-                [pfand] = "false">
+                [pfand] = "false"
+                [ausgabekennz] = "'B'">
 </app-getraenk>
 <app-getraenk   [getraenk] = "'Bockwurst'" 
                 [preis] = "'2.50'" 
-                [pfand] = "false">
+                [pfand] = "false"
+                [ausgabekennz] = "'K'">
 </app-getraenk>
 <app-getraenk   [getraenk] = "'Bockwurst mit Kartoffelsalat'" 
                 [preis] = "'4.00'" 
-                [pfand] = "false">
+                [pfand] = "false"
+                [ausgabekennz] = "'K'">
 </app-getraenk>
 <button class="unterkategorie" [routerLink]="['kaffee']">Kaffee</button>
 <app-getraenk   [getraenk] = "'Kartoffelsalat'" 
                 [preis] = "'2.00'" 
-                [pfand] = "false">
+                [pfand] = "false"
+                [ausgabekennz] = "'K'">
 </app-getraenk>
 <app-getraenk   [getraenk] = "'Wurstgulasch'" 
                 [preis] = "'4.00'" 
-                [pfand] = "false">
+                [pfand] = "false"
+                [ausgabekennz] = "'K'">
 </app-getraenk>
 
 <!-- <button class="unterkategorie" [routerLink]="['bockwurst']">Bockwurst</button> -->
@@ -28,7 +33,8 @@
 
 <!-- <app-getraenk   [getraenk] = "'Soljanka'" 
                 [preis] = "'4.00'" 
-                [pfand] = "false">
+                [pfand] = "false"
+                [ausgabekennz] = "'K'">
 </app-getraenk>  -->
 
 <router-outlet>

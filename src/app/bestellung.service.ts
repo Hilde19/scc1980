@@ -43,6 +43,8 @@ export class BestellungService {
   g_preis: Array<string> = [];
   e_preis: Array<string> = [];
   pfand: Array<string> = [];
+  ausgabekennz: Array<string> = [];
+  
 
 
 
@@ -97,11 +99,7 @@ export class BestellungService {
   pfandchipschrift ='';
 
   
-
-
-
-
-  addGetraenk(getr:string,epr:string, pf:boolean){  
+  addGetraenk(getr:string,epr:string, pf:boolean, ak:string){  
 
     this.x = this.getraenk.indexOf(getr);
     if(this.x >= 0 && getr != 'Sonstiges'){
@@ -124,6 +122,7 @@ export class BestellungService {
       this.getraenk.push(getr);
       this.g_preis.push(epr);
       this.anzahl.push('1');
+      this.ausgabekennz.push(ak);
       this.g_pr_num = parseFloat(epr);
       this.summe = parseFloat((this.summe*1 + this.g_pr_num*1).toPrecision(6));
       this.gesamtsumme = this.summe.toFixed(2);
@@ -143,6 +142,7 @@ export class BestellungService {
     this.g_preis.length = 0;
     this.e_preis.length = 0;
     this.pfand.length = 0;
+    this.ausgabekennz.length = 0;
     this.gesamtsumme = '0';
     this.summe = 0;
     this.anz_minus_pfand = 0;
@@ -156,6 +156,7 @@ export class BestellungService {
     this.pfandchip = '';
     this.pfandchipanzahl = 0;
     this.pfandchiprichtung = '';
+    
     
    
 
@@ -177,6 +178,7 @@ export class BestellungService {
     this.getraenk.splice (i, 1);
     this.g_preis.splice (i, 1); 
     this.e_preis.splice (i, 1);
+    this.ausgabekennz.splice (i,1);
 
       if (this.pfand[i] == '1') {
         this.pfanddazu_minus();
@@ -343,7 +345,7 @@ export class BestellungService {
     }
     
     if(this.preis_sonst != '0.00' && this.pfand_kz != '0'){
-      this.addGetraenk(this.getraenk_sonst,this.preis_sonst,this.pfand_sonst)
+      this.addGetraenk(this.getraenk_sonst,this.preis_sonst,this.pfand_sonst,'M')
       this.pfand_kz= '0';
       this.preis_sonst = '';
       this.betraegezuruecksetzen();
@@ -388,6 +390,7 @@ export class BestellungService {
       
       this.expense.bestellnr =  this.bestellnr_uebertragen_string;
       this.expense.zahlart = zahlart;
+      this.expense.ausgabekennz = this.ausgabekennz[j];
       
 
 
@@ -445,7 +448,6 @@ export class BestellungService {
     this.zahlnum = 0;
     this.zahlausgabe = '0.00';
   }
-  
 
 
 }

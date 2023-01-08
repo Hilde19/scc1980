@@ -13,6 +13,7 @@ export class GetraenkComponent implements OnInit {
   @Input() preis: string= '';
   @Input() pfand: boolean= false;
   @Input() cssClass: string= '';
+  @Input() ausgabekennz: string= '';
 
   constructor(public bs: BestellungService, private router: Router) { }
   

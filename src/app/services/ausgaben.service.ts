@@ -10,10 +10,10 @@ import { Expense } from '../models/expense';
 })
 export class AusgabenService {
   
-  private getUrl: string = "http://localhost:8080/api/v1/expenses";
-  private getUrl2: string = "http://localhost:8080/api/v2/expenses";
-  // private getUrl: string = "http://192.168.188.21:8080/api/v1/expenses";
-  // private getUrl2: string = "http://192.168.188.21:8080/api/v2/expenses";
+  // private getUrl: string = "http://localhost:8080/api/v1/expenses";
+  // private getUrl2: string = "http://localhost:8080/api/v2/expenses";
+  private getUrl: string = "http://192.168.188.21:8080/api/v1/expenses";
+  private getUrl2: string = "http://192.168.188.21:8080/api/v2/expenses";
 
   constructor(private _httpClient: HttpClient) { }
 

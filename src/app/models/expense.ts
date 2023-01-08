@@ -7,6 +7,8 @@ export class Expense {
     anzahl!: number;
     bestellnr!: string;
     zahlart!: string;
+    ausgabekennz!: string;
+    annehmer!: string;
     
       
 }

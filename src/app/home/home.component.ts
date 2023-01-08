@@ -9,7 +9,7 @@ import { BestellungService } from '../bestellung.service';
   providers: [BestellungService]
 })
 export class HomeComponent implements OnInit {
-  result: string | undefined;
+  
 
   
   constructor(public bs: BestellungService) { }

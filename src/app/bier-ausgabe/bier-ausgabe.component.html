@@ -1,11 +1,24 @@
-<div class="bierausgabe">  
-    <div *ngFor="let expense of expenses">
-        <div *ngIf="bierfilter(expense.expense)">
-            {{ expense.anzahl}} - {{ expense.expense }} - {{ expense.bestellnr }}
-            <button (click)="deleteExpense(expense.id);
-                saveExpense(expense.expense, expense.amount, 
-                expense.anzahl, expense.bestellnr, expense.zahlart )"
-            >OK</button> 
-        </div>       
-    </div> 
-</div>
+<div class="bierausgabe"> 
+     
+    <div *ngFor="let i of bestellung1">
+       1- {{ i.bestellnr }} {{i.anzahl}} {{ i.expense}} {{i.id}}
+    </div>
+    
+    <button (click)="erledigt01()">1-erledigt   
+    </button>
+    
+     <div *ngFor="let j of bestellung2">
+       2- {{ j.bestellnr }} {{j.anzahl}} {{ j.expense}} {{j.id}}
+    </div>
+    <button (click)="erledigt02()">2-erledigt   
+    </button>
+    
+    <div *ngFor="let k of bestellung3" >
+       3- {{ k.bestellnr }} {{k.anzahl}} {{ k.expense}} {{k.id}}
+    </div>
+    <button (click)="erledigt03()">3-erledigt   
+    </button>
+    
+    
+    
+    </div>

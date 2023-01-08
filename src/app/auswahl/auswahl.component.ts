@@ -9,7 +9,6 @@ import { BestellungService } from '../bestellung.service';
 })
 export class AuswahlComponent implements OnInit {
 
-
   @Input() testtext: string = '';
   @Input() fenster: string = '';
   essenliste = [''];
