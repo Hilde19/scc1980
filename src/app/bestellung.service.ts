@@ -367,7 +367,7 @@ export class BestellungService {
 
 
 
-  uebergeben(zahlart: string){
+  uebergeben(zahlart: string, annehmer: string){
     this.pfandchipsberechnung();
     this.betraegezuruecksetzen();
     this.x = this.getraenk.length
@@ -375,7 +375,7 @@ export class BestellungService {
     const timestamp = currentDate. getTime()
     this.bestellnr_uebertragen = timestamp;
     this.bestellnr_uebertragen_string = this.bestellnr_uebertragen.toFixed(0);
-     
+    
     
     for (let j = 0; j < this.getraenk.length; j++) {
 
@@ -391,6 +391,7 @@ export class BestellungService {
       this.expense.bestellnr =  this.bestellnr_uebertragen_string;
       this.expense.zahlart = zahlart;
       this.expense.ausgabekennz = this.ausgabekennz[j];
+      this.expense.annehmer = annehmer;
       
 
 

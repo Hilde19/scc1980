@@ -17,6 +17,9 @@ import { BestellungComponent } from "./bestellung/bestellung.component";
 import { BierAusgabeComponent } from "./bier-ausgabe/bier-ausgabe.component";
 
 import { HomeComponent } from "./home/home.component";
+import { KuecheAusgabeComponent } from "./kueche-ausgabe/kueche-ausgabe.component";
+import { Mischer01AusgabeComponent } from "./mischer01-ausgabe/mischer01-ausgabe.component";
+import { ModAusgabeComponent } from "./mod-ausgabe/mod-ausgabe.component";
 
 import { StartAnnahmeComponent } from "./start-annahme/start-annahme.component";
 // import { AUSWAHL_ROUTES } from "./auswahl/auswahl.routes";
@@ -31,7 +34,10 @@ const APP_ROUTES: Routes = [
 
      { path: 'start_annahme', component: StartAnnahmeComponent,
      children: AUSWAHL_ROUTES },     
-     { path: 'bier_ausgabe', component: BierAusgabeComponent}  ,       
+     { path: 'bier_ausgabe', component: BierAusgabeComponent}  , 
+     { path: 'kueche_ausgabe', component: KuecheAusgabeComponent}  ,  
+     { path: 'mischer01_ausgabe', component: Mischer01AusgabeComponent}  , 
+     { path: 'mod_ausgabe', component: ModAusgabeComponent}  ,   
 
 ];
 

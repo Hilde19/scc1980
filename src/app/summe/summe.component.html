@@ -9,9 +9,9 @@
             {{bs.gesamtsumme}} €</b> 
     </div>
     <div class="zahlung_bar">
-        <button class="button_bar" [routerLink]="['barzahl']" (click)="bs.uebergeben('bar')">BAR</button>
+        <button class="button_bar" [routerLink]="['barzahl']" (click)="bs.uebergeben('bar', annehmer)">BAR</button>
     </div>       
     <div class="zahlung_ec">       
-        <button class="button_ec" [routerLink]="['ec-geraet']" (click)="bs.uebergeben('ec')">EC</button>
+        <button class="button_ec" [routerLink]="['ec-geraet']" (click)="bs.uebergeben('ec', annehmer)">EC</button>
     </div>     
 </div>

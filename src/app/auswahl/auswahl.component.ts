@@ -8,7 +8,6 @@ import { BestellungService } from '../bestellung.service';
   styleUrls: ['./auswahl.component.css']
 })
 export class AuswahlComponent implements OnInit {
-
   @Input() testtext: string = '';
   @Input() fenster: string = '';
   essenliste = [''];

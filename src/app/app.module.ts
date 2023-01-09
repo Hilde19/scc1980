@@ -33,6 +33,9 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { GetraenkInaktivComponent } from './getraenk-inaktiv/getraenk-inaktiv.component';
 import { EcGeraetComponent } from './summe/ec-geraet/ec-geraet.component';
+import { KuecheAusgabeComponent } from './kueche-ausgabe/kueche-ausgabe.component';
+import { Mischer01AusgabeComponent } from './mischer01-ausgabe/mischer01-ausgabe.component';
+import { ModAusgabeComponent } from './mod-ausgabe/mod-ausgabe.component';
 
 
 @NgModule({
@@ -61,6 +64,9 @@ import { EcGeraetComponent } from './summe/ec-geraet/ec-geraet.component';
     OhnealkgetrOEisComponent,
     GetraenkInaktivComponent,
     EcGeraetComponent,
+    KuecheAusgabeComponent,
+    Mischer01AusgabeComponent,
+    ModAusgabeComponent,
 
   ],
   imports: [
